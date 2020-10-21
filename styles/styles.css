@@ -1,0 +1,333 @@
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+header {
+    width: 1440px;
+    height: 121px;
+    margin: 0px;
+    padding: 0px;
+}
+
+header a {
+    color: #808080;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+.search_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 755px;
+    margin-top: 23px;
+    margin-left: 0px;
+    background-image: url(../images/breather-196135.jpg);
+}
+
+.search_area button {
+    position: absolute;
+    width: 30.72px;
+    height: 25.77px;
+    left: 1132.26px;
+    top: 523.19px;
+}
+
+.search {
+    width: 940px;
+    height: 83.89px;
+    border-radius: 5px;
+    background-color: white;
+    background-repeat: no-repeat;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border: white;
+}
+
+.search_area ::placeholder {
+    text-align: center;
+    font-size: 24px;
+    color: #808080;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.search_area button img {
+    width: 30.72px;
+    height: 25.77px;
+}
+
+.search_area button {
+    background-color: white;
+    border: none;
+}
+
+header li:last-child a {
+    color: #4A90E2;
+    font-family: 'Open Sans', bold;
+    font-weight: bold;
+}
+
+.list_advantages {
+    width: 1280px;
+    height: 395px;
+    margin-left: 80px;
+    margin-top: -108px;
+    background-color: white;
+}
+
+.list_advantages ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.list_services {
+    width: 1272px;
+    height: 1200px;
+}
+
+
+.list_services ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.list_services li {
+    color: #808080;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.list_services img {
+    width: 296px;
+    height: 296px;
+}
+
+.form {
+    width: 1272px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+
+.form input[type=text], [type=email], [type=tel] {
+    width: 700px;
+    height: 52px;
+    border-radius: 4px;
+    border-color: #CBCBCB;
+    border-width: 1px;
+}
+
+.form input[id=message] {
+    width: 700px;
+    height: 166px;
+    border-radius: 4px;
+    border-color: #CBCBCB;
+    border-width: 1px;
+}
+
+.form input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border-color: #CBCBCB;
+    border-width: 1px;
+    align-self: flex-start;
+    justify-content: space-around;
+}
+
+.form div {   /*kostil*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    align-self: flex-start;
+    color: #474747;
+}
+
+
+.form ::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: #8B8B8B;
+}
+
+.form button {
+    width: 700px;
+    height: 50px;
+    background-color: #4A90E2;
+    color: white;
+    border-radius: 4px;
+    border: none;
+}
+
+.form p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #474747;
+}
+
+.list_testimonials {
+    width: 1440px;
+    height: 820px;
+    background-color: #FAFAFA;
+}
+
+.list_testimonials ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.list_testimonials div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+blockquote {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+    line-height: 46px;
+    text-align: center;
+}
+.list_testimonials button {
+    border: none;
+}
+
+.list_testimonials p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #d2d5d8;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+.list_testimonials .signature {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #d2d5d8;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.join_us {
+    width: 1440px;
+    height: 234px;
+    background-color: #4A90E2;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.join_us h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.83px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.join_us button {
+    width: 320px;
+    height: 84px;
+    border-radius: 42px;
+    border-color: white;
+    background-color: white;
+    color: #4A90E2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.63px;
+    font-weight: lighter;
+}
+
+footer {
+    background-color: #2C2C2C;
+}
+
+footer a, p, li {
+    color: #9FA3A7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 36px;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+}
+
+.footer_containers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pipe a::after /*:not(.pipe:last-child)*/{
+    content: ' | ';
+}
+
+/*a:hover {
+    color: tomato;
+}
+
+a:visited {
+    color: teal;
+}*/
+
+@font-face {
+    font-family: 'Market Deco';
+    src: url(../fonts/Market_Deco.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*h3 {
+    font-family: 'Market Deco';
+}*/
+
+
+
+
+

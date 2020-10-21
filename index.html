@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#"><img src="Vector.png" alt="homify logo"></a></li>
+                <li><a href="#"><img src="images/Vector.png" alt="homify logo"></a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Homify Maintenance Cover </a></li>
                 <li><a href="#">Login</a></li>
@@ -20,36 +20,39 @@
         </nav>
     </header>
     <main>
-        <div class="first">  
+        <div class="search_area">
             <form action="formDataProcessing.html" method="GET">
-                <input class="second" name="search" placeholder="Start your search here. Example: Plumber, Electrician etc."
-                    type="search">
-                <button type="submit"><img src="search.png" alt="search icon"></button>
+                <input class="search" name="search"
+                    placeholder="Start your search here. Example: Plumber, Electrician etc." type="search">
+                <button type="submit"><img src="images/search.png" alt="search icon"></button>
             </form>
         </div>
-        <section class="third">
-            <h3>Why us?</h3>
+        <section class="list_advantages">
+            <h3>Why Us?</h3>
             <ul>
-                <li><img src="Group9.png" alt="delicated relationship manager"></li>
-                <li><img src="Group8.png" alt="traidet in-house proffesionals"></li>
-                <li><img src="Group5.png" alt="100% service varraty"></li>
-                <li><img src="Group7.png" alt="one stop Maintenance"></li>
+                <li><img src="images/Group9.png" alt="delicated relationship manager"></li>
+                <li><img src="images/Group8.png" alt="traidet in-house proffesionals"></li>
+                <li><img src="images/Group5.png" alt="100% service varraty"></li>
+                <li><img src="images/Group7.png" alt="one stop Maintenance"></li>
             </ul>
         </section>
-        <section>
-            <h3>Our service</h3>
+        <section class="list_services">
+            <h3>Our Service</h3>
             <ul>
-                <li><img src="Group2.png" alt="later" width="430">AC Repair Plumber Electrician Carpenter</li>
-                <li><img src="1.png" alt="" width="100">Applicances</li>
-                <li><img src="2.png" alt="" width="100">Pest Control</li>
-                <li><img src="3.png" alt="" width="100">Painter</li>
-                <li><img src="4.png" alt="House cleaning" width="100">House cleaning</li>
-                <li><img src="5.png" alt="" width="100">Sofa/Carpet cleaning</li>
-                <li><img src="6.png" alt="" width="100">Tile Laying</li>
-                <li><img src="7.png" alt="" width="100">Civil Work</li>
+                <li><img src="images/8.png" alt=""><br>AC Repair</li>
+                <li><img src="images/9.png" alt=""><br>Plumber</li>
+                <li><img src="images/10.png" alt=""><br>Electrician</li>
+                <li><img src="images/11.png" alt=""><br>Carpenter</li>
+                <li><img src="images/1.png" alt=""><br>Applicances</li>
+                <li><img src="images/2.png" alt=""><br>Pest Control</li>
+                <li><img src="images/3.png" alt=""><br>Painter</li>
+                <li><img src="images/4.png" alt=""><br>House cleaning</li>
+                <li><img src="images/5.png" alt=""><br>Sofa/Carpet cleaning</li>
+                <li><img src="images/6.png" alt=""><br>Tile Laying</li>
+                <li><img src="images/7.png" alt=""><br>Civil Work</li>
             </ul>
         </section>
-        <section>
+        <section class="form">
             <h3>Request futher information</h3>
             <form action="formDataProcessing.html" method="POST">
                 <input name="email" placeholder="email" type="email" required><br>
@@ -58,128 +61,174 @@
                 <input type="text" name="company name" id="cname" placeholder="Company name"><br>
                 <input type="tel" name="phone" id="phone" placeholder="Phone number" required pattern="[0-9]{12}"><br>
                 <input type="text" name="message" id="message" placeholder="Your message" maxlength="1000"><br>
-                <input type="checkbox" name="agreement" id="agreement" value="true" required> I agree for a
-                representation of somesing<br>
-                <input type="checkbox" name="newsletter" id="newsletter" value="true"> Please, also subscribe to our
-                newsletter<br>
+                <div><input type="checkbox" name="agreement" id="agreement" value="true" required> I agree for a
+                    representation of something</div>
+                <div><input type="checkbox" name="newsletter" id="newsletter" value="true">Please, also subscribe to our
+                    newsletter</div>
                 <button type="submit">Submit</button>
             </form>
             <p>Please, find out our Privacy Policy <a href="#">here</a></p>
         </section>
-        <section>
-            <h3>Testimonials</h3>
-            <img src="Icon.png" alt="" width="30">
-            <ul>
-                <li>
-                    <blockquote>Aristotle maintained the sharp disctincion<br> between science and the pratical
-                        knowlendge<br>
-                        of artisans,
-                        trating theoretical speculation as<br> the highest type of human activity , practical<br>
-                        thinking
-                        about
-                        good living
-                    </blockquote>
-                    <button><img src="Photo3.png" alt="" width="80"></button>
-                </li>
-                <li>
-                    <button><img src="Photo1.png" alt="" width="60"></button>
-                </li>
-                <li>
-                    <button><img src="Photo2.png" alt="" width="60"></button>
-                </li>
-                <li>
-                    <button><img src="Photo4.png" alt="" width="60"></button>
-                </li>
-                <li>
-                    <button><img src="Photo5.png" alt="" width="60"></button>
-                </li>
-            </ul>
+        <section class="list_testimonials">
+            <div>
+                <div>
+                    <h3>Testimonials</h3>
+                </div>
+                <div><img src="images/Icon.png" alt="" width="30"></div>
+                <div>
+                    <div>
+                        <blockquote>Aristotle maintained the sharp disctincion<br> between science and the pratical
+                            knowlendge<br>
+                            of artisans,
+                            trating theoretical speculation as<br> the highest type of human activity ,
+                            practical<br>
+                            thinking
+                            about
+                            good living
+                        </blockquote>
+                    </div>
+                    <ul>
+                        <li>
+                            <button><img src="images/Photo1.png" alt="" width="74" height="74"></button>
+                        </li>
+                        <li>
+                            <button><img src="images/Photo2.png" alt="" width="74" height="74"></button>
+                        </li>
+                        <li>
+                            <button><img src="images/Object.png" alt="" width="115" height="117"></button>
+                        </li>
+                        <li>
+                            <button><img src="images/Photo4.png" alt="" width="74" height="74"></button>
+                        </li>
+                        <li>
+                            <button><img src="images/Photo5.png" alt="" width="74" height="74"></button>
+                        </li>
+                    </ul>
+                    <div>
+                        <img src="images/Line.png" width="1152" height="4">
+                    </div>
+                    <p>John Doe</p>
+                    <p class="signature">New Dehle</p>
+                </div>
+            </div>
         </section>
-        <h2>Looking to be a part of homify?</h2>
-        <form action="formDataProcessing.html" method="GET">
-            <button type="submit">JOIN US</button>
-        </form>
+        <div class="join_us">
+            <div>
+                <h2>Looking to be a part of homify?</h2>
+            </div>
+            <div>
+                <form action="formDataProcessing.html" method="GET">
+                    <button type="submit">JOIN US</button>
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
-        <img src="Vector.png" alt="" width="80">
-        <p>© 2020 Homify Online Customer Services Pvt. Ltd.</p>
-        <section>
-            <h3>Contact</h3>
-            <ul>
-                <li>Call: <a href="tel:981122540">981122540</a></li>
-                <li>Email: <a href="mailto:contactus@homify.com">contactus@homify.com</a></li>
-                <li>GMC: <a href="mailto:gmc@homify.com">gmc@homify.com</a></li>
-                <li>Address: Homify Online Consumer Service Pvt. Ltd.<br>
-                    2nd Floor, Building No 1735. Sector 2, HSR Layout,<br>
-                    Bengluru Karnataka 560102</li>
-            </ul>
-        </section>
-        <nav>
-            <section>
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="#">Plumder in Bangalore</a></li>
-                    <li><a href="#">Electrician in Bangalore</a></li>
-                    <li><a href="#">Carpenter in Bangalore</a></li>
-                    <li><a href="#">Applicances Repair in Bangalore</a></li>
-                    <li><a href="#">Pest Control in Bangalore</a></li>
-                    <li><a href="#">Painter in Bangalore</a></li>
-                    <li><a href="#">AC Repair in Bangalore</a></li>
-                    <li><a href="#">Carpet cleaning in Bangalore</a></li>
-                    <li><a href="#">Mansion/Civil Work in Bangalore</a></li>
-                    <li><a href="#">Tile granite Laying in Bangalore</a></li>
-                    <li><a href="#">House CLeaning in Bangalore</a></li>
-                </ul>
-            </section>
-            <section>
-                <h3>Homify home maintence <br>packages</h3>
-                <ul>
-                    <li><a href="#">Full house maintence package</a></li>
-                    <li><a href="#">Home Applicances maintenance package</a></li>
-                    <li><a href="#">Full house deep cleaning package</a></li>
-                    <li><a href="#">Pest Control package</a></li>
-                </ul>
-            </section>
-        </nav>
-        <section>
-            <h3>Homify: one stop home service</h3>
-            <p>Homify is a one stop solution that carters to all your home maintenance service needs at a short span of
-                time.
-                Currently based out of<br>bangaloreit helps in curating the home service vendors as well as provides for
-                an arrayouf
-                service rangingfrom repairing, house cleaning,<br>painting, carpenty works, pest control and other
-                handymen tasks.
-                It connect the homemakers nd owners with the best home service<br> profesionals to have a hassle free
-                expirience in
-                this busy life schedule.
-            </p>
-        </section>
-        <section>
-            <h3>Customer service</h3>
-            <ul>
-                <li>Customer Care Phone <a href="tel:981124540">981124540</a></li>
-                <li>Customer Care Email <a href="mailto:contactus@homify.com">contactus@homify.com</a></li>
-                <li><a href="#">F&Q</a></li>
-                <li><a href="#">Feedback</a></li>
-            </ul>
-        </section>
-        <img src="Group6.png" alt="app install">
-        <section>
-            <nav>
+        <div class="footer_containers">
+            <div>
+                <img src="images/homify-logo-white.png" alt="" width="201" height="48">
+                <p>© 2020 Homify Online Customer Services Pvt. Ltd.</p>
                 <section>
-                    <a href="#">About |</a>
-                    <a href="#"> Terms&Conditions |</a>
-                    <a href="#"> Privacy Policy |</a>
-                    <a href="#"> Blog</a>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Call: <a href="tel:981122540">981122540</a></li>
+                        <li>Email: <a href="mailto:contactus@homify.com">contactus@homify.com</a></li>
+                        <li>GMC: <a href="mailto:gmc@homify.com">gmc@homify.com</a></li>
+                        <li>Address: Homify Online Consumer Service Pvt. Ltd.<br>
+                            2nd Floor, Building No 1735. Sector 2, HSR Layout,<br>
+                            Bengluru Karnataka 560102</li>
+                    </ul>
+                </section>
+            </div>
+            <nav class="footer_containers">
+                <section>
+                    <h3>Services</h3>
+                    <ul class="footer_containers">
+                        <div>
+                            <li><a href="#">Plumder in Bangalore</a></li>
+                            <li><a href="#">Electrician in Bangalore</a></li>
+                            <li><a href="#">Carpenter in Bangalore</a></li>
+                            <li><a href="#">Applicances Repair in Bangalore</a></li>
+                            <li><a href="#">Pest Control in Bangalore</a></li>
+                            <li><a href="#">Painter in Bangalore</a></li>
+                        </div>
+                        <div>
+                            <li><a href="#">AC Repair in Bangalore</a></li>
+                            <li><a href="#">Carpet cleaning in Bangalore</a></li>
+                            <li><a href="#">Mansion/Civil Work in Bangalore</a></li>
+                            <li><a href="#">Tile granite Laying in Bangalore</a></li>
+                            <li><a href="#">House CLeaning in Bangalore</a></li>
+                        </div>
+                    </ul>
                 </section>
                 <section>
-                    <a href="#"><img src="facebook.png" alt="facebook logo"></a>
-                    <a href="#"><img src="twitter.png" alt="twitter logo"></a>
-                    <a href="#"><img src="LinkedIn.png" alt="linkedin logo"></a>
-                    <a href="#"><img src="pininterest.png" alt="pinterest logo"></a>
+                    <div>
+                        <h3>Homify home maintence <br>packages</h3>
+                        <ul>
+                            <li><a href="#">Full house maintence package</a></li>
+                            <li><a href="#">Home Applicances maintenance package</a></li>
+                            <li><a href="#">Full house deep cleaning package</a></li>
+                            <li><a href="#">Pest Control package</a></li>
+                        </ul>
+                    </div>
                 </section>
             </nav>
-        </section>
+        </div>
+        <div class="footer_containers">
+            <div>
+                <section>
+                    <h3>Homify: one stop home service</h3>
+                    <p>Homify is a one stop solution that carters to all your home maintenance service needs at a short
+                        span of time.
+                        Currently based out of<br>bangaloreit helps in curating the home service vendors as well as
+                        provides
+                        for an arrayouf
+                        service rangingfrom repairing, house cleaning,<br>painting,carpenty works, pest control and
+                        other handymen tasks.
+                        It connect the homemakers nd owners with the best home service<br>profesionals to have a hassle
+                        free expirience in this busy life schedule.
+                    </p>
+                </section>
+                <img src="images/Group6.png" alt="app install">
+            </div>
+            <div>
+                <section>
+                    <h3>Customer service</h3>
+                    <ul>
+                        <li>Customer Care Phone <a href="tel:981124540">981124540</a></li>
+                        <li>Customer Care Email <a href="mailto:contactus@homify.com">contactus@homify.com</a></li>
+                        <li><a href="#">F&Q</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div>
+            <section>
+                <nav class="footer_containers">
+                    <div>
+                        <section class="pipe">
+                            <ul class="footer_containers">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#"> Terms&Conditions</a></li>
+                                <li><a href="#"> Privacy Policy</a></li>
+                                <li><a href="#"> Blog</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div>
+                        <section>
+                            <ul class="footer_containers">
+                                <li> <a href="#"><img src="images/facebook.png" alt="facebook logo"></a></li>
+                                <li> <a href="#"><img src="images/twitter.png" alt="twitter logo"></a></li>
+                                <li><a href="#"><img src="images/LinkedIn.png" alt="linkedin logo"></a></li>
+                                <li> <a href="#"><img src="images/pininterest.png" alt="pinterest logo"></a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </nav>
+            </section>
+        </div>
     </footer>
 </body>
 
