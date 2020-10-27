@@ -4,10 +4,12 @@ header ul {
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
+    align-content: flex-start;
+    flex-grow: 0.5;
 }
 
 header {
-    width: 1440px;
+    width: 100%;
     height: 121px;
     margin: 0px;
     padding: 0px;
@@ -20,27 +22,50 @@ header a {
     font-weight: lighter;
 }
 
+header li:last-child a {
+    color: #4A90E2;
+    font-family: 'Open Sans', bold;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+header nav div {
+    margin-left: 5%;
+}
+
 .search_area {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1440px;
+    width: 100%;
     height: 755px;
-    margin-top: 23px;
-    margin-left: 0px;
+    margin-top: 0%;
+    margin-left: 0%;
     background-image: url(../images/breather-196135.jpg);
+    position: relative;
+}
+
+.search_area form {
+    width: 65%;
 }
 
 .search_area button {
-    position: absolute;
     width: 30.72px;
-    height: 25.77px;
-    left: 1132.26px;
-    top: 523.19px;
+    position: absolute;
+    right: 20%;
+    top: 47.5%;
+    background-color: white;
+    border: none;
 }
 
 .search {
-    width: 940px;
+    width: 100%;
     height: 83.89px;
     border-radius: 5px;
     background-color: white;
@@ -58,26 +83,15 @@ header a {
 
 .search_area button img {
     width: 30.72px;
-    height: 25.77px;
-}
-
-.search_area button {
-    background-color: white;
-    border: none;
-}
-
-header li:last-child a {
-    color: #4A90E2;
-    font-family: 'Open Sans', bold;
-    font-weight: bold;
 }
 
 .list_advantages {
-    width: 1280px;
-    height: 395px;
-    margin-left: 80px;
+    width: 89%;
+    margin: auto;
     margin-top: -108px;
+    margin-bottom: 5%;
     background-color: white;
+    position: relative;
 }
 
 .list_advantages ul {
@@ -96,17 +110,18 @@ h3 {
 }
 
 .list_services {
-    width: 1272px;
-    height: 1200px;
+    width: 89%;
+    margin: auto ;
 }
-
 
 .list_services ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: start;
     text-decoration: none;
     list-style-type: none;
+    width: 100%;
+    padding: 0px;
 }
 
 .list_services li {
@@ -114,15 +129,16 @@ h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .list_services img {
-    width: 296px;
-    height: 296px;
+    width: 95%;
 }
 
 .form {
-    width: 1272px;
+    margin: auto;
+    width: 89%;
 }
 
 .form form {
@@ -136,7 +152,7 @@ h3 {
 
 
 .form input[type=text], [type=email], [type=tel] {
-    width: 700px;
+    width: 55%;
     height: 52px;
     border-radius: 4px;
     border-color: #CBCBCB;
@@ -144,7 +160,7 @@ h3 {
 }
 
 .form input[id=message] {
-    width: 700px;
+    width: 55%;
     height: 166px;
     border-radius: 4px;
     border-color: #CBCBCB;
@@ -156,9 +172,7 @@ h3 {
     height: 18px;
     border-radius: 4px;
     border-color: #CBCBCB;
-    border-width: 1px;
-    align-self: flex-start;
-    justify-content: space-around;
+    border-width: 1px;    
 }
 
 .form div {   /*kostil*/
@@ -177,12 +191,13 @@ h3 {
 }
 
 .form button {
-    width: 700px;
+    width: 55%;
     height: 50px;
     background-color: #4A90E2;
     color: white;
     border-radius: 4px;
     border: none;
+    margin-top: 3%;
 }
 
 .form p {
@@ -194,24 +209,27 @@ h3 {
 }
 
 .list_testimonials {
-    width: 1440px;
-    height: 820px;
+    width: 100%;
     background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
 .list_testimonials ul {
-    list-style-type: none;
+    width: 80%;
+    list-style: none;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-}
-
-.list_testimonials div:first-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    margin: auto;
+    padding: 0px;
+    padding-bottom: 0px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(168, 166, 166);  
+    border-width: 2px;
 }
 
 blockquote {
@@ -220,7 +238,20 @@ blockquote {
     font-size: 24px;
     line-height: 46px;
     text-align: center;
+    margin-bottom: 30px;
 }
+
+.img_margin {
+    margin: auto;
+}
+
+.blue_border {
+    padding-bottom: 20px;
+    border-bottom-style: solid;
+    border-bottom-color: blue;
+    border-width: 5px;
+}
+
 .list_testimonials button {
     border: none;
 }
@@ -230,7 +261,17 @@ blockquote {
     font-family: 'Open Sans', sans-serif;
     color: #d2d5d8;
     font-weight: lighter;
+    margin-bottom: 4px;
     font-size: 22px;
+}
+
+.list_testimonials .p_par {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #d2d5d8;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-bottom: 100px;
 }
 
 .list_testimonials .signature {
@@ -242,7 +283,7 @@ blockquote {
 }
 
 .join_us {
-    width: 1440px;
+    width: 100%;
     height: 234px;
     background-color: #4A90E2;
     display: flex;
@@ -275,6 +316,8 @@ blockquote {
 
 footer {
     background-color: #2C2C2C;
+    width: 100%;
+    position: relative;
 }
 
 footer a, p, li {
@@ -288,6 +331,7 @@ footer a, p, li {
 
 footer ul {
     list-style-type: none;
+    padding: 0px;
 }
 
 footer h3 {
@@ -296,17 +340,92 @@ footer h3 {
     letter-spacing: 1.5px;
     font-weight: lighter;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 .footer_containers {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
-.pipe a::after /*:not(.pipe:last-child)*/{
-    content: ' | ';
+.logo_margin {
+    margin-left: 50px;
+    margin-bottom: 0px;
 }
+
+.h3_param {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.ul_param {
+    margin-top: 0px;
+}
+
+.ul_param li{
+    height: 20px;
+    line-height: 20px;
+}
+
+.box {
+    flex-grow: 0.3;
+}
+
+.box ul {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+}
+
+.box ul a {
+    padding-right: 30px;
+}
+
+.h3_par {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.mb {
+    margin-top: 0px;
+}
+
+.section_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.p_param {
+    line-height: 25px;
+}
+
+.f_container {    
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+    margin: auto;
+}
+
+.f_container a {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.stick li::after{
+    content: '|';
+}
+
+.stick li:last-child::after {
+    content: none;
+}
+
+
+
+
+
+
 
 /*a:hover {
     color: tomato;
@@ -326,6 +445,26 @@ a:visited {
 /*h3 {
     font-family: 'Market Deco';
 }*/
+
+body {
+    max-width: 1440px;
+    margin: 0%;
+}
+
+button {
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    position: relative;
+}
+
+/*.fr {
+    justify-content: space-around;
+}*/
+
+
 
 
 
