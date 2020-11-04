@@ -1,3 +1,11 @@
+header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
 header ul {
     display: flex;
     flex-direction: row;
@@ -5,14 +13,24 @@ header ul {
     align-items: center;
     list-style-type: none;
     align-content: flex-start;
-    flex-grow: 0.5;
+    flex-wrap: wrap;
 }
 
-header {
+header img {
     width: 100%;
-    height: 121px;
-    margin: 0px;
-    padding: 0px;
+    height: auto;
+    max-width: 262px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.header-container nav {
+    flex-grow: 0.5;
 }
 
 header a {
@@ -28,14 +46,7 @@ header li:last-child a {
     font-weight: bold;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    align-items: center;
-}
-
-header nav div {
+header h1 {
     margin-left: 5%;
 }
 
@@ -48,11 +59,13 @@ header nav div {
     margin-top: 0%;
     margin-left: 0%;
     background-image: url(../images/breather-196135.jpg);
+    background-size: auto;
     position: relative;
 }
 
 .search_area form {
     width: 65%;
+    height: 11%;
 }
 
 .search_area button {
@@ -66,7 +79,7 @@ header nav div {
 
 .search {
     width: 100%;
-    height: 83.89px;
+    height: 100%;
     border-radius: 5px;
     background-color: white;
     background-repeat: no-repeat;
@@ -99,6 +112,7 @@ header nav div {
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
 h3 {
@@ -111,7 +125,7 @@ h3 {
 
 .list_services {
     width: 89%;
-    margin: auto ;
+    margin: auto;
 }
 
 .list_services ul {
@@ -133,7 +147,8 @@ h3 {
 }
 
 .list_services img {
-    width: 95%;
+    max-width: 95%;
+    height: auto;
 }
 
 .form {
@@ -149,7 +164,6 @@ h3 {
     align-items: center;
     align-content: center;
 }
-
 
 .form input[type=text], [type=email], [type=tel] {
     width: 55%;
@@ -172,17 +186,17 @@ h3 {
     height: 18px;
     border-radius: 4px;
     border-color: #CBCBCB;
-    border-width: 1px;    
+    border-width: 1px;
 }
 
-.form div {   /*kostil*/
+.form div {
+    /*kostil*/
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     font-size: 16px;
     align-self: flex-start;
     color: #474747;
 }
-
 
 .form ::placeholder {
     font-family: 'Roboto', sans-serif;
@@ -221,6 +235,7 @@ h3 {
     width: 80%;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
     padding: 0px;
@@ -228,7 +243,7 @@ h3 {
     margin-top: 30px;
     margin-bottom: 20px;
     border-bottom-style: solid;
-    border-bottom-color: rgb(168, 166, 166);  
+    border-bottom-color: rgb(168, 166, 166);
     border-width: 2px;
 }
 
@@ -345,6 +360,7 @@ footer h3 {
 
 .footer_containers {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
 }
@@ -363,7 +379,7 @@ footer h3 {
     margin-top: 0px;
 }
 
-.ul_param li{
+.ul_param li {
     height: 20px;
     line-height: 20px;
 }
@@ -376,7 +392,7 @@ footer h3 {
     height: 220px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
 }
 
 .box ul a {
@@ -401,7 +417,7 @@ footer h3 {
     line-height: 25px;
 }
 
-.f_container {    
+.f_container {
     display: flex;
     justify-content: space-between;
     width: 94%;
@@ -413,19 +429,13 @@ footer h3 {
     margin-left: 20px;
 }
 
-.stick li::after{
+.stick li::after {
     content: '|';
 }
 
 .stick li:last-child::after {
     content: none;
 }
-
-
-
-
-
-
 
 /*a:hover {
     color: tomato;
@@ -442,11 +452,40 @@ a:visited {
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'Visby CF-Extra Bold';
+    src: url(../fonts/VisbyCF-ExtraBold.ttf);
+    font-style: normal;
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: 'Visby CF-Extra BoldOblique';
+    src: url(../fonts/VisbyCF-ExtraBoldOblique.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Visby CF-Heavy';
+    src: url(../fonts/VisbyCF-Heavy.ttf);
+    font-style: normal;
+    font-weight: bolder;
+}
+
 /*h3 {
     font-family: 'Market Deco';
 }*/
 
 body {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+html {
+    width: 100%;
     max-width: 1440px;
     margin: 0%;
 }
@@ -456,7 +495,7 @@ button {
 }
 
 main {
-    width: 100%;
+    max-width: 100%;
     position: relative;
 }
 
@@ -464,9 +503,135 @@ main {
     justify-content: space-around;
 }*/
 
+.modal {
+    width: 320px;
+    height: 320px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 1;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.6);
+}
 
+.popeup {
+    display: none;
+    position: fixed;
+}
 
+#window:target {
+    display: block;
+}
 
+.modal img {
+    width: 100%;
+    height: auto;
+}
 
+.modal h1 {
+    width: 50%;
+    margin: auto;
+}
 
+.modal h4 {
+    margin: auto;
+    text-align: center;
+    font-family: 'Visby CF-Heavy';
+    font-size: 150%;
+    color: #445266;
+}
 
+.logos {
+    background-color: #445266;
+}
+
+.logos ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+.logos li {
+    margin-top: 2%;
+}
+
+.modal_close {
+    border: none;
+    margin-top: 0%;
+    width: 5%;
+    margin-left: 95%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+}
+
+.modal_close a {
+    background-color: white;
+    text-decoration: none;
+    color: #445266;
+}
+
+.modal_form {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.modal_form input {
+    width: 100%;
+    height: 40px;
+    margin: 0%;
+    margin-bottom: 5%;
+    border-radius: 4px;
+    border-color: #CBCBCB;
+    border-width: 1px;
+}
+
+.modal_checkbox {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.modal_checkbox input {
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+}
+
+.modal_checkbox div {
+    color: #445266;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.modal_form button {
+    border-radius: 5px;
+    color: white;
+    background-color: #445266;
+    border: none;
+    width: 30%;
+    height: auto;
+}
+
+.modal_form a {
+    text-decoration: none;
+    color: #445266;
+    margin: 1%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.shirma {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(104, 103, 102);
+    opacity: 0.2;
+    position: fixed;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
