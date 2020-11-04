@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-mini.css">
+    <script src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
                 <ul>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Homify Maintenance Cover </a></li>
-                    <li><a href="#window">Login</a></li>
+                    <li><a href="#window" onclick='ShowModal()'>Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -208,7 +209,7 @@
     </footer>
     <section class="popeup" id="window">
         <div class="modal">
-            <button class="modal_close"><a href="#">X</a></button>
+            <button class="modal_close"><a href="#" onclick='CloseModal()'>X</a></button>
             <h1><img src="images/Vector.png" alt=""></h1>
             <h4>SIGN IN</h4>
             <form action="formDataProcessing.html" method="POST" class="modal_form">
