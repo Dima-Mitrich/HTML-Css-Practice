@@ -520,10 +520,6 @@ main {
     position: fixed;
 }
 
-#window:target {
-    display: block;
-}
-
 .modal img {
     width: 100%;
     height: auto;
